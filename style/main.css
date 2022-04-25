@@ -1,0 +1,88 @@
+
+main{
+
+ display: flex;
+ justify-content: center;
+background-color: #000000;
+height: 100%;
+}
+
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 160px;
+    width: 800px;
+    overflow: hidden;
+}
+.container .text{
+    position: relative;
+    
+    font-size: 56px;
+    font-weight: 600;
+}
+.container .text.first-text{
+    background-image: linear-gradient(160deg, rgb(90, 90, 90) 45%, rgb(34, 34, 34) 96%);
+  -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    padding-right: 8px;
+}
+
+.container .text.sec-text{
+    background-image: linear-gradient(170deg, #66B32E 45%, #B1CB08 96%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #010718;
+    border-left: 2px solid #66B32E;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    80%, 50%{
+        left: calc(100% + 10px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+.hOvuuP {
+    
+    width: 30px;
+    position: fixed;
+    bottom: 60px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    color: var(--light-slate);
+    
+}
+
+.hOvuuP svg{
+    color: #66B32E;
+    font-weight: 100;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+.linha-vertical {
+   margin-left: 14px;
+    height: 160px;/*Altura da linha*/
+    border-left: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+    color: rgb(101, 102, 102);
+  }
