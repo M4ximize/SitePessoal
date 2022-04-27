@@ -6,10 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style/index.css">
   <link rel="stylesheet" href="../style/main.css">
-  <title>Yuri Mãximo</title>
-</head>
+  <title>Yuri Máximo</title>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <div class="rounded"></div>
+  <div class="pointed"></div>
+ <script>
 
+    const cursorRounded = document.querySelector('.rounded'); 
+
+    const moveCursor = (e)=> {
+      const mouseY = e.clientY; 
+       const mouseX = e.clientX; 
+ cursorRounded.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`; 
+  } 
+  window.addEventListener('mousemove', moveCursor)
+    
+</script>
+</head>
 <body>
+
   <header>
 <div class="header">
   <div class="logo">
@@ -22,10 +37,11 @@
  
   <div class="menu">
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li class="center"><a href="#">Sobre</a></li>
-      <li class="upward"><a href="#">Contato</a></li>
-      <li class="forward"><a href="#"> Download CV</a></li>
+      <li><a href="#home">Home</a></li>
+      <li class="center"><a href="#sobre">Sobre</a></li>
+      <li class="upward"><a href="#contato">Contato</a></li>
+      <li class="forward"><a href="#projetos"> Projetos</a></li>
+      <a href="#download" class="a"> Curriculo</a></li>
     </ul>
   
 </div>
@@ -34,22 +50,27 @@
 
 </header>
 <main>
-  <div orientation="left" class="side__StyledSideElement-sc-1duznzb-0 hOvuuP">
+  
+  <div orientation="left" class="sociais">
     <ul class="social__StyledSocialList-anu6nt-0 dVLQAC fade-enter-done">
-      <li><a href="https://github.com/bchiang7" aria-label="GitHub" target="_blank" rel="noreferrer">
+      <li><a href="https://github.com/M4ximize" aria-label="GitHub" target="_blank" rel="noreferrer">
         <svg
             xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+            stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+          
             <title>GitHub</title>
+           
             <path
               d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-            </path>
+            </path> 
+          
+
           </svg></a></li>
      
       
-      <li><a href="https://www.linkedin.com/in/bchiang7" aria-label="Linkedin" target="_blank" rel="noreferrer"><svg
+      <li><a href="https://www.linkedin.com/in/yuri-m%C3%A1ximo-da-costa-0101/" aria-label="Linkedin" target="_blank" rel="noreferrer"><svg
             xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+            stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
             <title>LinkedIn</title>
             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
             <rect x="2" y="9" width="4" height="12"></rect>
@@ -57,10 +78,21 @@
           </svg></a></li>
     
     </ul>  
-    <div class="linha-vertical"></div>
+    <div class="linha-vertical-l"></div>
   </div>
 
-  <section>
+  <div orientation="rigth" class="bntsections">
+    <ul class="social__StyledSocialList-anu6nt-0 dVLQAC fade-enter-done">
+      <li class="center"><a href="#sobre">S</a></li>
+      <li class="upward"><a href="#contato">C</a></li>
+      <li class="forward"><a href="#projetos">P</a></li>
+
+    
+    </ul>  
+    <div class="linha-vertical-r"></div>
+  </div>
+
+  <section class="s1" id="home">
     <div class="container">
       <span class="text first-text">Eu sou</span>
       <span class="text sec-text">Freelancer</span>
@@ -83,15 +115,38 @@
 
         textLoad();
         setInterval(textLoad, 12000);
-    </script>    
+    </script> 
+     <div>
+     
+      
 </section>
-    
+    <section class="s2" id="sobre">
+
+     <h1>Sobre</h1>
+      <h3>Yuri Máximo</h3>
+    </section>
+
+   <section class="s3" id="contato">
+      
+     <h1>Contato</h1>
+     
+      <h3>Yuri Máximo</h3>
+    </section>
+
+    <section class="s4" id="projetos">
+      
+      <h1>Projetos</h1>
+      
+       <h3>Yuri Máximo</h3>
+     </section>
   
   
   
+   
   
   </main>
-<footer>footer</footer>
+<footer>footer dsfdsfdsf</footer>
+
 
 </body>
 </html>

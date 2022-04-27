@@ -1,10 +1,22 @@
+.s1{
+
+    overflow: auto;
+    
+}
+
+
+
+
 
 main{
-
+    width: 100%;
+    margin: auto 0px;
+align-items: center;
  display: flex;
  justify-content: center;
-background-color: #000000;
-height: 100%;
+flex-direction: column;
+
+
 }
 
 
@@ -13,8 +25,10 @@ height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 160px;
-    width: 800px;
+   margin-top: -200px;
+   width: auto;
+   height: 500px;
+   
     overflow: hidden;
 }
 .container .text{
@@ -42,7 +56,7 @@ height: 100%;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #010718;
+    background-color: #000000;
     border-left: 2px solid #66B32E;
     animation: animate 4s steps(12) infinite;
 }
@@ -55,7 +69,9 @@ height: 100%;
     }
 }
 
-.hOvuuP {
+
+
+.sociais {
     
     width: 30px;
     position: fixed;
@@ -67,22 +83,111 @@ height: 100%;
     
 }
 
-.hOvuuP svg{
+.bntsections {
+    
+    width: 30px;
+    position: fixed;
+    bottom: 60px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
+    color: var(--light-slate);
+   
+    
+}
+
+.sociais svg{
     color: #66B32E;
     font-weight: 100;
 }
 
-*, ::before, ::after {
-    box-sizing: inherit;
-}
 
-*, ::before, ::after {
-    box-sizing: inherit;
-}
 
-.linha-vertical {
-   margin-left: 14px;
-    height: 160px;/*Altura da linha*/
+.linha-vertical-l {
+   margin-left: 15px;
+    height: 120px;/*Altura da linha*/
     border-left: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
     color: rgb(101, 102, 102);
+    margin-top: 20px;
+  }
+
+  .linha-vertical-r {
+    margin-left: 15px;
+     height: 120px;/*Altura da linha*/
+     border-left: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+     color: rgb(101, 102, 102);
+     margin-top: 20px;
+   }
+
+
+  
+
+.s2{
+    
+  
+  
+    
+    overflow: auto;
+    
+}
+
+
+  h1{
+      color: aliceblue;
+  }
+
+  h3{
+    color: aliceblue;
+}
+.s3{
+  
+    overflow: auto;
+}
+
+section{
+max-width: 1440px;
+  min-height: 100%;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+
+@media (max-width:768px) {
+
+    .s1{
+      
+    width: 400px;
+   
+  }
+  .nav-links li a{
+   font-size: 14px;
+  }
+  
+  .a{
+    font-size: 14px;
+  }
+  .container .text{
+      margin-top: -200px;
+    font-size: 32px;
+  }
+  .sociais {
+      width: 20px;
+      font-weight: bolder;
+      stroke-width: 2;
+  }
+  .bntsections {
+      font-size: 8px;
+  }
+
+  .linha-vertical-l{
+    height: 0;
+  }
+
+  .linha-vertical-r{
+    height: 0;
+  }
   }
